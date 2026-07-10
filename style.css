@@ -1,4 +1,4 @@
-/* --- RESET & GLOBAL STYLES --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -28,7 +28,7 @@ a {
     transition: all 0.3s ease;
 }
 
-/* --- BUTTONS --- */
+
 .btn {
     display: inline-block;
     padding: 10px 22px;
@@ -73,7 +73,7 @@ a {
     background-color: #2563eb;
 }
 
-/* --- SECTION TYPOGRAPHY --- */
+
 .section-title {
     text-align: center;
     font-size: 32px;
@@ -89,7 +89,7 @@ a {
     margin-bottom: 48px;
 }
 
-/* --- NAVBAR SECTION --- */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -137,19 +137,19 @@ a {
     color: #2563eb;
 }
 
-/* --- BANNER (HERO) SECTION --- */
+
 .hero-section {
     position: relative;
     height: 75vh;
     min-height: 500px;
-    background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80');
+    background-image: url('./img/banner.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 70px; /* Offset for fixed navbar */
+    padding-top: 70px; 
 }
 
 .hero-overlay {
@@ -158,7 +158,11 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95));
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.40),
+        rgba(15, 23, 42, 0.60)
+    );
     z-index: 1;
 }
 
@@ -202,7 +206,7 @@ a {
     transform: translateY(-2px);
 }
 
-/* --- MEET THE SPEAKERS SECTION --- */
+
 .speakers-section {
     padding: 80px 0;
     background-color: #ffffff;
@@ -248,10 +252,22 @@ a {
     margin-bottom: 12px;
 }
 
-.tag-ai { color: #2563eb; }
-.tag-cloud { color: #0d9488; }
-.tag-frontend { color: #ea580c; }
-.tag-security { color: #db2777; }
+.tag-ai {
+     color: #2563eb;
+
+}
+.tag-cloud { 
+    color: #0d9488; 
+
+}
+.tag-frontend { 
+    color: #ea580c; 
+
+}
+.tag-security { 
+    color: #db2777; 
+
+}
 
 .speaker-info h3 {
     font-size: 20px;
@@ -265,7 +281,7 @@ a {
     color: #64748b;
 }
 
-/* --- SECURE YOUR SPOT (PRICING) SECTION --- */
+
 .pricing-section {
     padding: 80px 0;
     background-color: #f8fafc;
@@ -460,7 +476,7 @@ a {
     color: #64748b;
 }
 
-/* --- RESPONSIVE DESIGN (MOBILE ADAPTATION) --- */
+
 @media (max-width: 992px) {
     .pricing-grid {
         grid-template-columns: 1fr;
@@ -473,7 +489,7 @@ a {
 
 @media (max-width: 768px) {
     .nav-menu {
-        display: none; /* Simplifies mobile view without heavy JS */
+        display: none; 
     }
     .hero-content h1 {
         font-size: 38px;
