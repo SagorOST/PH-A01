@@ -396,8 +396,32 @@ section{
     border-radius:16px;
     text-align:center;
     padding:35px 20px;
+    transition:.35s ease;
 }
 
+.stat-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.stat-icon{
+    font-size:38px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.stat-card small{
+    display:block;
+    color:#64748b;
+    font-size:14px;
+    margin-top:10px;
+    line-height:1.6;
+}
+
+.highlight-btn{
+    text-align:center;
+    margin-top:50px;
+}
 .stat-number{
     font-size:48px;
     font-weight:800;
