@@ -137,16 +137,18 @@ section{
     padding:18px 0;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:800;
-    color:#0f172a;
+
+.navbar-logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
 }
 
-.logo span{
-    color:#2563eb;
+.navbar-logo img{
+    width:170px;
+    height:auto;
+    display:block;
 }
-
 .nav-menu{
     display:flex;
     gap:30px;
@@ -270,6 +272,10 @@ section{
 
 .section-title{
     font-size:32px;
+}
+.navbar-logo img{
+    width:130px;
+    height:auto;
 }
 
 }
@@ -549,6 +555,8 @@ section{
 }
 
 .footer .logo{
+    font-size:28px;
+    font-weight:800;
     color:#ffffff;
 }
 
