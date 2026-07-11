@@ -603,13 +603,14 @@ section{
     display:flex;
     align-items:center;
     background:#ffffff;
-    padding:10px 16px;
-    border-radius:12px;
+    padding: 8px 14px;
+    border-radius:10px;
+     width:fit-content; 
 }
 
 .footer-logo img{
-    width:55px;
-    height:55px;
+    width:32px;
+    height:32px;
     object-fit:contain;
 }
 
