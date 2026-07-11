@@ -238,9 +238,26 @@ section{
 }
 
 .nav-menu{
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    width:100%;
+}
+
+.nav-menu a{
+    text-align:center;
+    font-size:14px;
+}
+
+.nav-action{
+    width:100%;
     justify-content:center;
-    gap:15px;
+}
+
+.nav-action .btn{
+    width:100%;
+    max-width:220px;
+    text-align:center;
 }
 
 .hero-content h1{
@@ -404,6 +421,19 @@ section{
 
 .stats-grid{
     grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.stat-card{
+    padding:20px 12px;
+}
+
+.stat-number{
+    font-size:34px;
+}
+
+.stat-caption{
+    font-size:15px;
 }
 
 .speaker-img-wrapper{
